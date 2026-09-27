@@ -1,8 +1,12 @@
 # Good Plate · Restaurant ordering demo
 
-A responsive Flutter restaurant-ordering demo. Customers can browse a sample menu, adjust quantities, and submit an order with a kitchen note; staff can manage menu items and review/update the saved order queue.
+A responsive restaurant-ordering demo. The Android and iOS experience uses Flutter. The web view is a standalone HTML, CSS and JavaScript app. Customers can browse a sample menu, adjust quantities, and submit an order with a kitchen note; staff can manage menu items and review/update the saved order queue.
 
-This project has no restaurant backend, customer accounts, or payment processing. The clearly labeled sample menu, menu changes, and demo orders are stored locally on the device with Hive. They are not sent to a live restaurant.
+This project has no restaurant backend, customer accounts, or payment processing. The clearly labeled sample menu, menu changes, and demo orders are stored locally on the device with Hive in Flutter and browser local storage on the web. They are not sent to a live restaurant or synchronized between devices.
+
+### Web view
+
+Open `web/index.html` through a static web server (for example `flutter run -d chrome` or `python -m http.server --directory web 8000` from the repository root). The web implementation is dependency-free and uses browser local storage for its demo menu and orders.
 
 ## Screenshot
 
